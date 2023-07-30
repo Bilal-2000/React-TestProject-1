@@ -1,0 +1,97 @@
+.header{
+  height: 80px;
+}
+
+.nav{
+  display: flex;
+  background:black;
+  height: 100%;
+  padding: 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-logo-para img{
+  width: 40px;
+  height: auto;
+}
+
+.nav-logo-para{
+  display: flex;
+  align-items:center;
+}
+
+.nav-logo-para p{
+  font-size: 4vh;
+  color: #61dafb;
+  font-weight: 650;
+  margin-left: 20px;
+}
+
+.nav-para-2{
+  color: white;
+  margin-right: 20px;
+}
+
+.body{
+  height: calc(100vh - 80px);
+  margin-top: 60px;
+  background: #1C1C1C;
+  overflow-x: hidden;
+}
+
+.body-heading{
+  display: flex;
+  color: white;
+  font-weight: bolder;
+  margin-left: 30px;
+  padding-top: 40px;
+  align-items: center;
+}
+
+.body-img-points{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.body-img-points img{
+  filter: grayscale(100);
+  width: 400px;
+  height: auto;
+  overflow-x: hidden;
+  margin-right:-15% !important;
+  margin-bottom: 50px;
+}
+
+.body-ul{
+  font-size: larger;
+  margin-left: 50px;
+  list-style: none;
+  display: flex;
+  color: white;
+  flex-direction: column;
+  margin-top: -50px;
+}
+
+.body-img-points ul li{
+  margin-top: 20px;
+  font-size: large;
+}
+
+.body-img-points ul li::before{
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: skyblue; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  font-size: 30px;
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */ 
+  /* font-size: larger; */
+}
+
+.body-img-points ul li::marker {
+  /* Set the desired size for the bullet */
+  font-size: 100px; /* Adjust this value to change the bullet size */
+  /* You can also use other properties like width and height to control the bullet size */
+}
